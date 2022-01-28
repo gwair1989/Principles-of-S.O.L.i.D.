@@ -13,7 +13,7 @@ class DataFetcherService {
     var networkDataFetcher: DataFetcher
     var localDataFetcher: DataFetcher
     
-    init(networkDataFetcher: DataFetcher = LocalDataFetcher(), localDataFetcher: DataFetcher = LocalDataFetcher()) {
+    init(networkDataFetcher: DataFetcher = NetworkDataFetcher(), localDataFetcher: DataFetcher = LocalDataFetcher()) {
         self.networkDataFetcher = networkDataFetcher
         self.localDataFetcher = localDataFetcher
     }
